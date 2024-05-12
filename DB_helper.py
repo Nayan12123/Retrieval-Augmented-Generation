@@ -55,7 +55,7 @@ def add_to_chroma(chunks: list[Document]):
 
 def split_documents(documents):
     text_splitter = RecursiveCharacterTextSplitter(
-        chunk_size=800,
+        chunk_size=300,
         chunk_overlap=80,
         length_function=len,
         is_separator_regex=False,
