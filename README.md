@@ -5,6 +5,7 @@ Given Below is the brief description of the RAG process.
 <img width="910" alt="image" src="https://github.com/Nayan12123/Retrieval-Augmented-Generation/assets/91980608/2238c438-531a-47bb-82ed-c95316ecf2e2">
 <br />
 It mainly consists of 5 steps.
+<br />
 **step 1.** Loading the Document. <br />
 **step 2.** Chunking the splitted document. <br />
 **step 3.** Convert chunks to vector embeddings and Dumping the same to a VectorDB<br />
