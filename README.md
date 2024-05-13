@@ -61,5 +61,13 @@ streamlit run app.py
 ```
 Step 6. You can either ask any question or you can upload the pdfs and then type your question.
 
+## Demo
+You can ask any question to the bot without uploading the pdf.  <br />
+<img width="1348" alt="image" src="https://github.com/Nayan12123/Retrieval-Augmented-Generation/assets/91980608/d1553530-1d99-40f0-82ec-599c837c4427">
+ <br />
+or
+You can upload all the pdfs and ask question related to those pdfs.  <br />
+<img width="1417" alt="image" src="https://github.com/Nayan12123/Retrieval-Augmented-Generation/assets/91980608/ed71abb9-134f-4d53-9f2c-175637cf963a">
+ <br />
 
 
