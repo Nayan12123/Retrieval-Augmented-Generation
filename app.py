@@ -5,6 +5,11 @@ import shutil
 import os
 from RAG_query import*
 
+CHROMA_PATH = "chroma"
+def clear_database():
+    if os.path.exists(CHROMA_PATH):
+        shutil.rmtree(CHROMA_PATH)
+
 def CreateVectorDB():
     command = ["python", "DB_helper.py","--reset"]
     process = subprocess.Popen(command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
@@ -60,7 +65,9 @@ def main():
                             f.write(uploaded_file.getbuffer())
                         CreateVectorDB()
                         st.success(f"File '{uploaded_file.name}' uploaded successfully!")
-                        
+        if st.button("Delete"):
+            with st.spinner("Processing"):  
+                clear_database()             
                 
          
     
@@ -81,6 +88,7 @@ def main():
             st.session_state.chat_history.append(out['Response'])
             st.session_state.chat_history.append(user_question)
             handle_userinput()  
+    
         
 
 
